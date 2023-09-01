@@ -1,0 +1,157 @@
+body {
+    background: #F0F0F0;
+    font-family: Poppins;
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container {
+    border-radius: 24px 24px 176px 24px;
+    background: #FFF;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub_container {
+    width: 728px;
+    padding: 56px 56px 70px 56px;
+}
+
+.time_box {
+    display: flex;
+    gap: 16px;
+}
+
+.time_title {
+    color: #716F6F;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+
+}
+
+.time_box .date_box {
+    max-width: 142px;
+    border-radius: 8px;
+    border: 1px solid #DBDBDB;
+    background: #FFF;
+    padding: 25px 0px 25px 16px;
+    color: #716F6F;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2.1px;
+}
+
+.horizontal_line {
+    display: flex;
+}
+
+.horizontal_line hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #DBDBDB;
+    margin: 48px 0;
+
+}
+
+button {
+    border-radius: 9999px;
+    background: #854DFF;
+    padding: 26px 25px;
+    display: flex;
+    border: 0px;
+}
+
+button:active {
+    background-color: black;
+}
+
+.date_field {
+    display: flex;
+    gap: 19px
+}
+
+.years .years_year,
+.months .fa-sharp.fa-solid.fa-dash,
+.days .fa-sharp.fa-solid.fa-dash {
+    color: #854DFF;
+    font-family: Poppins;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105.6px;
+}
+
+.texts {
+    color: #141414;
+    font-family: Poppins;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105.6px;
+}
+/* Add this style to set the default border color to purple */
+.date_box.default-border {
+    border: 1px solid #854DFF;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    body {
+            align-items: center;
+            padding: 160px 16px 163px 16px;
+        }   
+    .container {
+            max-width: 100%;
+            padding: 53px 24px 51px 24px;
+            height: auto;
+    
+        }  
+        
+        .sub_container {
+            padding: 40px;
+            max-width: 100%;
+        }   
+    /* body {
+        align-items: center;
+        padding: 160px 16px 163px 16px;
+    }
+
+   
+
+    .sub_container {
+        padding: 40px;
+    }
+
+    .time_box .date_box {
+
+        font-size: 20px;
+        padding: 17px 5px;
+        line-height: 16px;
+    }
+
+    .horizontal_line hr {
+        justify-items: center;
+
+    }
+
+    
+    .years .years_year,
+    .months .fa-sharp.fa-solid.fa-dash,
+    .days .fa-sharp.fa-solid.fa-dash {
+        width: 60px;
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+    .texts {
+        font-size: 52px;
+        line-height: 57.2px;
+    } */
+}

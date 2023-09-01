@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,200;0,600;1,300&family=Inter:wght@300&family=Outfit:wght@500&family=Poppins:wght@100;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sub_container ">
+            <form>
+                <div class="time_box">
+                    <div class="">
+                        <div class="time_title">Day</div>
+                        <input class="date_box" id="day-input" placeholder="DD" onfocus="onInputFocus(this)"
+                            onblur="onInputBlur(this)">
+                    </div>
+                    <div>
+                        <div class="time_title">Month</div>
+                        <input class="date_box" id="month-input" placeholder="MM" onfocus="onInputFocus(this)"
+                            onblur="onInputBlur(this)">
+                    </div>
+                    <div>
+                        <div class="time_title">Year</div>
+                        <input class="date_box" id="year-input" placeholder="YYYY" onfocus="onInputFocus(this)"
+                            onblur="onInputBlur(this)">
+                    </div>
+                </div>
+                <div class="horizontal_line">
+                    <hr>
+                    <button onclick="calculateDateDifference(event)">
+                        <img src="images/Down_Arrow.svg" alt="" class="down_arrow">
+                    </button>
+                </div>
+            </form>
+
+            <div class="date_field">
+                <div>
+                    <div class="years">
+                        <div><i class="fa-sharp fa-solid fa-dash years_year">--</i></div>
+                    </div>
+                    <div class="months">
+                        <div><i class="fa-sharp fa-solid fa-dash months_month">--</i></div>
+                    </div>
+                    <div class="days">
+                        <div><i class="fa-sharp fa-solid fa-dash days_day">--</i></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="texts">Years</div>
+                    <div class="texts">Months</div>
+                    <div class="texts">Days</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>
